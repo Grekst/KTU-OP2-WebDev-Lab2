@@ -7,6 +7,9 @@ namespace Laboratorinis_2
 {
     public class InOut
     {
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     }
 }

@@ -78,6 +78,8 @@
     <Compile Include="Forma1.aspx.designer.cs">
       <DependentUpon>Forma1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="InOut.cs" />
+    <Compile Include="City.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

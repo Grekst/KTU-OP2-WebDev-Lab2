@@ -8,14 +8,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
+<<<<<<< Updated upstream
         <div style="height: 218px">
             <asp:Label ID="Label1" runat="server" Text="Minimalus atstumas"></asp:Label>
+=======
+        <div>
+            <asp:Label ID="MinDistance_Label" runat="server" Text="Minimalus atstumas"></asp:Label>
+>>>>>>> Stashed changes
             <br />
             <br />
-            <asp:TextBox ID="TextBox1" runat="server" LostFocus="LostFocus"></asp:TextBox>
+            <asp:TextBox ID="MinDistance_DataTextbox" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Įvesti"/>
+            <asp:Button ID="MinDistance_SubmitButton" runat="server" Text="Įvesti" />
             <br />
             <br />
         </div>
