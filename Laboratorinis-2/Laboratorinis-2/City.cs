@@ -18,7 +18,8 @@ namespace Laboratorinis_2
 
         public City()
         {
-
+            Name = null;
+            Population = 0;
         }
     }
 }

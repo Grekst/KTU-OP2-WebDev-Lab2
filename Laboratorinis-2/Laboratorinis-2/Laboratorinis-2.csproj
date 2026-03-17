@@ -80,6 +80,7 @@
     </Compile>
     <Compile Include="InOut.cs" />
     <Compile Include="City.cs" />
+    <Compile Include="LListCity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

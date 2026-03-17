@@ -15,7 +15,6 @@
         <div>
             <asp:Label ID="MinDistance_Label" runat="server" Text="Minimalus atstumas"></asp:Label>
             <br />
-            <br />
             <asp:TextBox ID="MinDistance_DataTextbox" runat="server"></asp:TextBox>
             <br />
             <br />
@@ -37,7 +36,6 @@
         </div>
         <div>
             <asp:Label ID="Result_Label" runat="server" Text="Rezultatai"></asp:Label>
-            <br />
             <br />
             <asp:TextBox ID="Result_TextBox" runat="server"></asp:TextBox>
     </form>
