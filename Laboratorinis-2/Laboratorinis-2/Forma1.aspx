@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="height: 218px">
             <asp:Label ID="Label1" runat="server" Text="Minimalus atstumas"></asp:Label>
             <br />
             <br />
@@ -19,13 +19,19 @@
             <br />
             <br />
         </div>
-        <div>
+        <div style="height: 187px">
             <asp:Label ID="Label2" runat="server" Text="Duomenų failas"></asp:Label>
             <br />
             <asp:FileUpload ID="FileUpload1" runat="server" />
             <br />
             <br />
             <asp:TextBox ID="TextBox2" runat="server" ReadOnly="True" TextMode="MultiLine"></asp:TextBox>
+        </div>
+        <div>
+            <asp:Label ID="Label3" runat="server" Text="Rezultatai"></asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
         </div>
     </form>
 </body>
