@@ -15,5 +15,10 @@ namespace Laboratorinis_2
             Name = name;
             Population = population;
         }
+
+        public City()
+        {
+
+        }
     }
 }

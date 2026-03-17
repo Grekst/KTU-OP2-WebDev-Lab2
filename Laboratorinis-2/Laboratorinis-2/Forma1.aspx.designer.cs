@@ -42,57 +42,66 @@ namespace Laboratorinis_2
         protected global::System.Web.UI.WebControls.TextBox MinDistance_DataTextbox;
 
         /// <summary>
-        /// MinDistance_SubmitButton control.
+        /// Data_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button MinDistance_SubmitButton;
+        protected global::System.Web.UI.WebControls.Label Data_Label;
 
         /// <summary>
-        /// Label2 control.
+        /// Data_FileUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.FileUpload Data_FileUpload;
 
         /// <summary>
-        /// FileUpload1 control.
+        /// Data_Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.WebControls.Label Data_Label2;
 
         /// <summary>
-        /// TextBox2 control.
+        /// Data_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox Data_TextBox;
 
         /// <summary>
-        /// Label3 control.
+        /// Data_CalculateButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Button Data_CalculateButton;
 
         /// <summary>
-        /// TextBox3 control.
+        /// Result_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.Label Result_Label;
+
+        /// <summary>
+        /// Result_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Result_TextBox;
     }
 }

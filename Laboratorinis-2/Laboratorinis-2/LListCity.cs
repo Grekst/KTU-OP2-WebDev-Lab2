@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Laboratorinis_2
 {
-    public class InOut
+    public class LListCity
     {
-        public void ReadDataFromFile()
+        public sealed class Node
         {
 
         }
