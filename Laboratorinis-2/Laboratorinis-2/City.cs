@@ -21,5 +21,16 @@ namespace Laboratorinis_2
             Name = null;
             Population = 0;
         }
+
+        public override string ToString()
+        {
+            return string.Format("{0} (pop. {1})", Name, Population);
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is City city &&
+                   Name == city.Name;
+        }
     }
 }

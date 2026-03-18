@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Routing;
 
 namespace Laboratorinis_2
 {
-    public class LListCity
+    public class LListRoad
     {
         private sealed class Node
         {
-            public City Data { get; set; }
+            public Road Data { get; set; }
             public Node Link { get; set; }
 
-            public Node(City data, Node link)
+            public Node(Road data, Node link)
             {
                 Data = data;
                 Link = link;
@@ -25,17 +24,17 @@ namespace Laboratorinis_2
         private Node last;
         private Node current;
 
-        public LListCity()
+        public LListRoad()
         {
-            tail = new Node(null, null);
-            head = new Node(null, tail);
+            tail = new Node(new Road(), null);
+            head = new Node(new Road(), tail);
             last = head;
             current = null;
         }
 
-        public void Append(City city)
+        public void Append(Road road)
         {
-            last.Link = new Node(city, tail);
+            last.Link = new Node(road, tail);
             last = last.Link;
         }
 
@@ -54,34 +53,9 @@ namespace Laboratorinis_2
             return current != tail;
         }
 
-        public City GetCity()
+        public Road GetRoad()
         {
             return current.Data;
-        }
-
-        public bool Containts(string name, int population)
-        {
-            for (Begin(); Exist(); Next())
-            {
-                if (current.Data.Name.Equals(name) && current.Data.Population.Equals(population))
-                {
-                    return true;
-                }
-            }
-
-            return false;
-        }
-
-        public City Find(string cityName)
-        {
-            for (Begin(); Exist(); Next())
-            {
-                if (current.Data.Name == cityName)
-                {
-                    return current.Data;
-                }
-            }
-            return null;
         }
 
         public int Count()

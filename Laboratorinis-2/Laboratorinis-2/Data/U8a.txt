@@ -1,0 +1,10 @@
+﻿Vilnius, Kaunas, 100
+Vilnius, Trakai, 28
+Trakai, Druskininkai, 120
+Kaunas, Klaipėda, 215
+Kaunas, Šiauliai, 150
+Šiauliai, Panevėžys, 80
+Šiauliai, Naujoji Akmenė, 60
+Panevėžys, Vilnius, 135
+Druskininkai, Kaunas, 130
+Naujoji Akmenė, Šiauliai, 60

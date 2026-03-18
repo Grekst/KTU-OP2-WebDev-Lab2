@@ -67,6 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\U8b.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\U8a.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Forma1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -81,7 +87,11 @@
     <Compile Include="InOut.cs" />
     <Compile Include="City.cs" />
     <Compile Include="LListCity.cs" />
+    <Compile Include="LListRoad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Road.cs" />
+    <Compile Include="Route.cs" />
+    <Compile Include="TaskUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
