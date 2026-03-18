@@ -77,7 +77,6 @@ namespace Laboratorinis_2
             if (string.IsNullOrEmpty(cityName)) return null;
             for (Begin(); Exist(); Next())
             {
-                // OrdinalIgnoreCase leidžia rasti "kaunas", net jei faile yra "Kaunas"
                 if (current.Data.Name.Trim().Equals(cityName.Trim(), StringComparison.OrdinalIgnoreCase))
                 {
                     return current.Data;

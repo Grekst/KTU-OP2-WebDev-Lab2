@@ -29,19 +29,30 @@ namespace Laboratorinis_2
             last = last.Link;
         }
 
-        public void Begin() => current = head.Link;
-        public void Next() => current = current.Link;
-        public bool Exist() => current != tail;
-        public Route Get() => current.Data;
+        public void Begin()
+        {
+            current = head.Link;
+        }
+        public void Next()
+        {
+            current = current.Link;
+        }
+        public bool Exist()
+        {
+            return current != tail;
+        }
+        public Route Get()
+        {
+            return current.Data;
+        }
 
-        // Rikiavimas: pagal ilgį (didėjančiai) ir pirmo miesto pavadinimą
         public void Sort()
         {
             for (Node i = head.Link; i != tail; i = i.Link)
             {
                 for (Node j = i.Link; j != tail; j = j.Link)
                 {
-                    string nameI = i.Data.Cities.GetFirstCityName(); // Reikės metodo LListCity
+                    string nameI = i.Data.Cities.GetFirstCityName();
                     string nameJ = j.Data.Cities.GetFirstCityName();
 
                     if (i.Data.TotalDistance > j.Data.TotalDistance ||
