@@ -1,5 +1,2 @@
 Rasti maršrutai:
-Kaunas -> Vilnius | Ilgis: 102 km
-Kaunas -> Vilnius -> Šiauliai | Ilgis: 316 km
-Kaunas -> Vilnius -> Šiauliai -> Panevėžys | Ilgis: 419 km
-Kaunas -> Vilnius -> Šiauliai -> Klaipėda | Ilgis: 450 km
+Maršrutų nerasta. Patikrinkite pradinį miestą ir filtrus.
