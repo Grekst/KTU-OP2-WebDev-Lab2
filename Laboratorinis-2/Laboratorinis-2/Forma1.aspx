@@ -17,16 +17,19 @@
             <asp:Label ID="MinDistance_Label" runat="server" Text="Minimalus atstumas"></asp:Label>
             <br />
             <asp:TextBox ID="MinDistance_DataTextBox" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="MinDistance_DataTextBox" ErrorMessage="Minimalus atstumas yra privalomas" ForeColor="Red">*</asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Label ID="MaxPopulation_Label" runat="server" Text="Maksimali populiacija"></asp:Label>
             <br />
             <asp:TextBox ID="MaxPopulation_DataTextBox" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="MaxPopulation_DataTextBox" ErrorMessage="Maksimali populiacija yra privaloma" ForeColor="Red">*</asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Label ID="StartCity_Label" runat="server" Text="Pradinis miestas"></asp:Label>
             <br />
             <asp:TextBox ID="StartCity_TextBox" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="StartCity_TextBox" ErrorMessage="Praidinis miestas yra privalomas" ForeColor="Red">*</asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Label ID="DestinationCity_Label" runat="server" Text="Nelankytinas meistas"></asp:Label>
@@ -56,6 +59,9 @@
             <asp:Button ID="Data_CalculateButton" runat="server" Text="Vykdyti" OnClick="Data_CalculateButton_Click" class="button" />
             &nbsp;&nbsp;&nbsp;
             <asp:Button ID="UploadStartingData_Button" runat="server" Text="Rašyti į App_Data" class="button2" OnClick="UploadStartingData_Button_Click" />
+            <br />
+            <br />
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
             <br />
             <br />
         </div>
