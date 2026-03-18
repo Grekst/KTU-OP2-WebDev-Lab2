@@ -11,6 +11,9 @@
 
         private Node head, tail, last, current;
 
+        /// <summary>
+        /// A blank constructor for linked list
+        /// </summary>
         public LListRoute()
         {
             tail = new Node(null, null);
@@ -18,6 +21,10 @@
             last = head;
         }
 
+        /// <summary>
+        /// Appends a node inside the linked list
+        /// </summary>
+        /// <param name="route"></param>
         public void Append(Route route)
         {
             last.Link = new Node(route, tail);
@@ -36,11 +43,19 @@
         {
             return current != tail;
         }
+
+        /// <summary>
+        /// Gets the route data
+        /// </summary>
+        /// <returns></returns>
         public Route Get()
         {
             return current.Data;
         }
 
+        /// <summary>
+        /// Sorts the routes by total travel distance
+        /// </summary>
         public void Sort()
         {
             for (Node i = head.Link; i != tail; i = i.Link)

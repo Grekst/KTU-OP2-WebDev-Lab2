@@ -5,6 +5,11 @@ namespace Laboratorinis_2
 {
     public class InOut
     {
+        /// <summary>
+        /// Reads all data from a file
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>A string of all data</returns>
         public static string ReadFileData(string path)
         {
             string content;
@@ -17,6 +22,11 @@ namespace Laboratorinis_2
             return content;
         }
 
+        /// <summary>
+        /// Creates a linked list from input string
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
         public static LListCity ReadCity(string text)
         {
             LListCity city = new LListCity();
@@ -43,6 +53,11 @@ namespace Laboratorinis_2
             return city;
         }
 
+        /// <summary>
+        /// Creates a road linked list from input string
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
         public static LListRoad ReadRoad(string text)
         {
             LListRoad road = new LListRoad();
@@ -70,7 +85,11 @@ namespace Laboratorinis_2
             return road;
         }
 
-
+        /// <summary>
+        /// Writes text string into path
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="text"></param>
         public static void WriteContentsToFile(string filePath, string text)
         {
             if (!File.Exists(filePath))

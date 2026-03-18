@@ -62,7 +62,7 @@ namespace Laboratorinis_2
             string contents_A = Data_TextBox1.Text;
             string contents_B = Data_TextBox2.Text;
 
-            InOut.WriteContentsToFile(path, contents_A + '\n' + new string('=', 64) + '\n' + contents_B);
+            InOut.WriteContentsToFile(path, contents_A + '\n' + new string('=', 32) + '\n' + contents_B);
         }
 
         protected void UploadResults_Button_Click(object sender, EventArgs e)

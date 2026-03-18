@@ -4,6 +4,16 @@ namespace Laboratorinis_2
 {
     public static class TaskUtils
     {
+        /// <summary>
+        /// Finds all possible routes that match criteria
+        /// </summary>
+        /// <param name="allCities"></param>
+        /// <param name="allRoads"></param>
+        /// <param name="startCityName"></param>
+        /// <param name="maxPop"></param>
+        /// <param name="minRouteLen"></param>
+        /// <param name="unwantedCity"></param>
+        /// <returns></returns>
         public static LListRoute FindAllRoutes(LListCity allCities, LListRoad allRoads,
                                                 string startCityName, int maxPop,
                                                 int minRouteLen, string unwantedCity)
@@ -23,6 +33,17 @@ namespace Laboratorinis_2
             return results;
         }
 
+        /// <summary>
+        /// A recursive method used for finding routes matching criteria
+        /// </summary>
+        /// <param name="currentCity"></param>
+        /// <param name="currentPath"></param>
+        /// <param name="allCities"></param>
+        /// <param name="allRoads"></param>
+        /// <param name="maxPop"></param>
+        /// <param name="minRouteLen"></param>
+        /// <param name="unwantedCity"></param>
+        /// <param name="results"></param>
         private static void GenerateRoutes(City currentCity, Route currentPath,
                                             LListCity allCities, LListRoad allRoads,
                                             int maxPop, int minRouteLen,

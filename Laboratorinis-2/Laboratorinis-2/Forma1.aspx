@@ -43,12 +43,12 @@
             <asp:Button ID="Data_UploadFromInternal" runat="server" Text="Įkelti iš App_Data" OnClick="Data_UploadFromInternal_Click" class="button" />
             <br />
             <br />
-            <asp:Label ID="Data_Label1" runat="server" Text="Miestai"></asp:Label>
+            <asp:Label ID="Data_Label1" runat="server" Text="Keliai tarp miestų (U8b.txt)"></asp:Label>
             <br />
             <asp:TextBox ID="Data_TextBox1" runat="server" TextMode="MultiLine" CssClass="auto-style1" Width="346px" Height="111px"></asp:TextBox>
             <br />
             <br />
-            <asp:Label ID="Data_Label2" runat="server" Text="Keliai tarp miestų"></asp:Label>
+            <asp:Label ID="Data_Label2" runat="server" Text="Miestai (U8a.txt)"></asp:Label>
             <br />
             <asp:TextBox ID="Data_TextBox2" runat="server" CssClass="auto-style1" TextMode="MultiLine" Width="346px" Height="111px"></asp:TextBox>
             <br />
