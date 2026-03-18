@@ -33,13 +33,67 @@ namespace Laboratorinis_2
         protected global::System.Web.UI.WebControls.Label MinDistance_Label;
 
         /// <summary>
-        /// MinDistance_DataTextbox control.
+        /// MinDistance_DataTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MinDistance_DataTextbox;
+        protected global::System.Web.UI.WebControls.TextBox MinDistance_DataTextBox;
+
+        /// <summary>
+        /// MaxPopulation_Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label MaxPopulation_Label;
+
+        /// <summary>
+        /// MaxPopulation_DataTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MaxPopulation_DataTextBox;
+
+        /// <summary>
+        /// StartCity_Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label StartCity_Label;
+
+        /// <summary>
+        /// StartCity_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox StartCity_TextBox;
+
+        /// <summary>
+        /// DestinationCity_Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DestinationCity_Label;
+
+        /// <summary>
+        /// AvoidCity_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox AvoidCity_TextBox;
 
         /// <summary>
         /// Data_UploadFromInternal control.

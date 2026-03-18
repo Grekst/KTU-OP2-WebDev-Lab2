@@ -74,9 +74,11 @@ namespace Laboratorinis_2
 
         public City Find(string cityName)
         {
+            if (string.IsNullOrEmpty(cityName)) return null;
             for (Begin(); Exist(); Next())
             {
-                if (current.Data.Name == cityName)
+                // OrdinalIgnoreCase leidžia rasti "kaunas", net jei faile yra "Kaunas"
+                if (current.Data.Name.Trim().Equals(cityName.Trim(), StringComparison.OrdinalIgnoreCase))
                 {
                     return current.Data;
                 }
@@ -93,6 +95,33 @@ namespace Laboratorinis_2
             }
 
             return count;
+        }
+
+        public string GetFirstCityName()
+        {
+            if (head.Link != tail)
+            {
+                return head.Link.Data.Name;
+            }
+            return string.Empty;
+        }
+
+        public bool ContainsName(string name)
+        {
+            for (Begin(); Exist(); Next())
+            {
+                if (current.Data.Name == name) return true;
+            }
+            return false;
+        }
+
+        public void RemoveLast()
+        {
+            if (head.Link == tail) return;
+            Node temp = head;
+            while (temp.Link != last) temp = temp.Link;
+            temp.Link = tail;
+            last = temp;
         }
     }
 }

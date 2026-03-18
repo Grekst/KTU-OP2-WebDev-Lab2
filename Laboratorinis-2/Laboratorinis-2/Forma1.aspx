@@ -15,7 +15,22 @@
         <div>
             <asp:Label ID="MinDistance_Label" runat="server" Text="Minimalus atstumas"></asp:Label>
             <br />
-            <asp:TextBox ID="MinDistance_DataTextbox" runat="server"></asp:TextBox>
+            <asp:TextBox ID="MinDistance_DataTextBox" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="MaxPopulation_Label" runat="server" Text="Maksimali populiacija"></asp:Label>
+            <br />
+            <asp:TextBox ID="MaxPopulation_DataTextBox" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="StartCity_Label" runat="server" Text="Pradinis miestas"></asp:Label>
+            <br />
+            <asp:TextBox ID="StartCity_TextBox" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="DestinationCity_Label" runat="server" Text="Nelankytinas meistas"></asp:Label>
+            <br />
+            <asp:TextBox ID="AvoidCity_TextBox" runat="server"></asp:TextBox>
             <br />
             <br />
         </div>
@@ -43,7 +58,7 @@
         <div>
             <asp:Label ID="Result_Label" runat="server" Text="Rezultatai"></asp:Label>
             <br />
-            <asp:TextBox ID="Result_TextBox" runat="server"></asp:TextBox>
+            <asp:TextBox ID="Result_TextBox" runat="server" Width="346px" Height="111px" ReadOnly="True" TextMode="MultiLine"></asp:TextBox>
         </div>
     </form>
 </body>

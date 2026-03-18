@@ -58,6 +58,24 @@ namespace Laboratorinis_2
             return current.Data;
         }
 
+        private Node saved;
+
+        /// <summary>
+        /// Išsaugo dabartinę iteratoriaus poziciją prieš rekursiją
+        /// </summary>
+        public void SavePosition()
+        {
+            saved = current;
+        }
+
+        /// <summary>
+        /// Atkuria iteratoriaus poziciją po rekursijos
+        /// </summary>
+        public void RestorePosition()
+        {
+            current = saved;
+        }
+
         public int Count()
         {
             int count = 0;

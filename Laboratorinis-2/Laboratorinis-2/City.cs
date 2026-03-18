@@ -29,8 +29,7 @@ namespace Laboratorinis_2
 
         public override bool Equals(object obj)
         {
-            return obj is City city &&
-                   Name == city.Name;
+            return obj is City city && Name == city.Name;
         }
     }
 }

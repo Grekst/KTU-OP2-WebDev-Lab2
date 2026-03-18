@@ -1,8 +1,7 @@
-﻿Vilnius, 540000
+﻿Vilnius, 580000
 Kaunas, 290000
-Klaipėda, 150000
-Šiauliai, 100000
+Klaipėda, 145000
+Šiauliai, 95000
 Panevėžys, 85000
-Naujoji Akmenė, 13000
-Druskininkai, 12000
-Trakai, 5000
+Alytus, 50000
+Marijampolė, 35000

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.IO;
 
 namespace Laboratorinis_2
 {
@@ -17,8 +18,33 @@ namespace Laboratorinis_2
 
         protected void Data_CalculateButton_Click(object sender, EventArgs e)
         {
-            LListCity cityList = InOut.ReadCity(Data_TextBox1.Text);
-            LListRoad roadList = InOut.ReadRoad(Data_TextBox2.Text);
+            LListRoad roadList = InOut.ReadRoad(Data_TextBox1.Text);
+            LListCity cityList = InOut.ReadCity(Data_TextBox2.Text);
+
+            string start = StartCity_TextBox.Text.Trim(); // Pvz. "Kaunas"
+            int maxP = int.Parse(MaxPopulation_DataTextBox.Text); // Pvz. 500000
+            int minD = int.Parse(MinDistance_DataTextBox.Text); // Pvz. 50
+            string avoid = AvoidCity_TextBox.Text.Trim(); // Pvz. "Alytus"
+
+            LListRoute foundRoutes = TaskUtils.FindAllRoutes(cityList, roadList, start, maxP, minD, avoid);
+            foundRoutes.Sort();
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Rasti maršrutai:");
+
+            foundRoutes.Begin();
+            if (!foundRoutes.Exist())
+            {
+                sb.AppendLine("Maršrutų nerasta. Patikrinkite pradinį miestą ir filtrus.");
+            }
+            else
+            {
+                for (; foundRoutes.Exist(); foundRoutes.Next())
+                {
+                    sb.AppendLine(foundRoutes.Get().ToString());
+                }
+            }
+            Result_TextBox.Text = sb.ToString();
         }
 
         protected void Data_UploadFromInternal_Click(object sender, EventArgs e)

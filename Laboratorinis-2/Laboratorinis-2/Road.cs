@@ -9,7 +9,7 @@ namespace Laboratorinis_2
     {
         public string Start { get; private set; }
         public string Destination { get; private set; }
-        public int Distance { get; private set; }
+        public int Distance { get; set; }
 
         public Road()
         {
