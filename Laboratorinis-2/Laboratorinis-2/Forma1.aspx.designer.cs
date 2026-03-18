@@ -96,15 +96,6 @@ namespace Laboratorinis_2
         protected global::System.Web.UI.WebControls.TextBox AvoidCity_TextBox;
 
         /// <summary>
-        /// Data_UploadFromInternal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Data_UploadFromInternal;
-
-        /// <summary>
         /// Data_Header control.
         /// </summary>
         /// <remarks>
@@ -112,6 +103,15 @@ namespace Laboratorinis_2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Data_Header;
+
+        /// <summary>
+        /// Data_UploadFromInternal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Data_UploadFromInternal;
 
         /// <summary>
         /// Data_Label1 control.
@@ -159,6 +159,15 @@ namespace Laboratorinis_2
         protected global::System.Web.UI.WebControls.Button Data_CalculateButton;
 
         /// <summary>
+        /// UploadStartingData_Button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button UploadStartingData_Button;
+
+        /// <summary>
         /// Result_Label control.
         /// </summary>
         /// <remarks>
@@ -175,5 +184,14 @@ namespace Laboratorinis_2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Result_TextBox;
+
+        /// <summary>
+        /// UploadResults_Button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button UploadResults_Button;
     }
 }

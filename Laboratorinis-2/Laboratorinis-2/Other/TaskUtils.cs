@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Laboratorinis_2
 {
     public static class TaskUtils
     {
         public static LListRoute FindAllRoutes(LListCity allCities, LListRoad allRoads,
-            string startCityName, int maxPop, int minRouteLen, string unwantedCity)
+                                                string startCityName, int maxPop,
+                                                int minRouteLen, string unwantedCity)
         {
             LListRoute results = new LListRoute();
             City startCity = allCities.Find(startCityName);
@@ -25,7 +23,10 @@ namespace Laboratorinis_2
             return results;
         }
 
-        private static void GenerateRoutes(City currentCity, Route currentPath, LListCity allCities, LListRoad allRoads, int maxPop, int minRouteLen, string unwantedCity, LListRoute results)
+        private static void GenerateRoutes(City currentCity, Route currentPath,
+                                            LListCity allCities, LListRoad allRoads,
+                                            int maxPop, int minRouteLen,
+                                            string unwantedCity, LListRoute results)
         {
             if (currentPath.TotalDistance > minRouteLen)
             {

@@ -55,5 +55,22 @@ namespace Laboratorinis_2
             Data_TextBox1.Text = InOut.ReadFileData(fileName1);
             Data_TextBox2.Text = InOut.ReadFileData(fileName2);
         }
+
+        protected void UploadStartingData_Button_Click(object sender, EventArgs e)
+        {
+            string path = Server.MapPath("~/Data/PradiniaiDuomenys.txt");
+            string contents_A = Data_TextBox1.Text;
+            string contents_B = Data_TextBox2.Text;
+
+            InOut.WriteContentsToFile(path, contents_A + '\n' + new string('=', 64) + '\n' + contents_B);
+        }
+
+        protected void UploadResults_Button_Click(object sender, EventArgs e)
+        {
+            string path = Server.MapPath("~/Data/Rezultatai.txt");
+            string contents = Result_TextBox.Text;
+
+            InOut.WriteContentsToFile(path, contents);
+        }
     }
 }

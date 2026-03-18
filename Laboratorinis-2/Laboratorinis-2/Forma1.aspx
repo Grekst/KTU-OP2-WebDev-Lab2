@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
     <title></title>
     <style type="text/css">
         .auto-style1 {
@@ -35,10 +36,11 @@
             <br />
         </div>
         <div>
-            <asp:Button ID="Data_UploadFromInternal" runat="server" Text="Įkelti iš App_Data" OnClick="Data_UploadFromInternal_Click" />
-            <br />
             <br />
             <asp:Label ID="Data_Header" runat="server" Text="Pradiniai duomenys"></asp:Label>
+            <br />
+            <br />
+            <asp:Button ID="Data_UploadFromInternal" runat="server" Text="Įkelti iš App_Data" OnClick="Data_UploadFromInternal_Click" class="button" />
             <br />
             <br />
             <asp:Label ID="Data_Label1" runat="server" Text="Miestai"></asp:Label>
@@ -51,7 +53,9 @@
             <asp:TextBox ID="Data_TextBox2" runat="server" CssClass="auto-style1" TextMode="MultiLine" Width="346px" Height="111px"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Data_CalculateButton" runat="server" Text="Vykdyti" OnClick="Data_CalculateButton_Click" />
+            <asp:Button ID="Data_CalculateButton" runat="server" Text="Vykdyti" OnClick="Data_CalculateButton_Click" class="button" />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="UploadStartingData_Button" runat="server" Text="Rašyti į App_Data" class="button2" OnClick="UploadStartingData_Button_Click" />
             <br />
             <br />
         </div>
@@ -59,6 +63,9 @@
             <asp:Label ID="Result_Label" runat="server" Text="Rezultatai"></asp:Label>
             <br />
             <asp:TextBox ID="Result_TextBox" runat="server" Width="346px" Height="111px" ReadOnly="True" TextMode="MultiLine"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="UploadResults_Button" runat="server" CssClass="button2" Text="Rašyti į App_Data" OnClick="UploadResults_Button_Click" />
         </div>
     </form>
 </body>

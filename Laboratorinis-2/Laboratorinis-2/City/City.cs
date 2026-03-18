@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Laboratorinis_2
+﻿namespace Laboratorinis_2
 {
     public class City
     {
@@ -24,7 +19,7 @@ namespace Laboratorinis_2
 
         public override string ToString()
         {
-            return string.Format("{0} (pop. {1})", Name, Population);
+            return string.Format("{0, -20} | {1, 20}", Name, Population);
         }
 
         public override bool Equals(object obj)

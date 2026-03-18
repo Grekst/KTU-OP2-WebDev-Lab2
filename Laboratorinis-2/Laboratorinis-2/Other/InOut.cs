@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Web;
-using System.Web.SessionState;
-using System.Xml;
 
 namespace Laboratorinis_2
 {
@@ -73,6 +68,17 @@ namespace Laboratorinis_2
                 }
             }
             return road;
+        }
+
+
+        public static void WriteContentsToFile(string filePath, string text)
+        {
+            if (!File.Exists(filePath))
+            {
+                File.Create(filePath);
+            }
+
+            File.WriteAllText(filePath, text);
         }
 
     }

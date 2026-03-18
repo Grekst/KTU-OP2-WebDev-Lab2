@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\PradiniaiDuomenys.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Rezultatai.txt" />
     <Content Include="Data\U8b.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -74,6 +78,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Forma1.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,15 +89,15 @@
     <Compile Include="Forma1.aspx.designer.cs">
       <DependentUpon>Forma1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="InOut.cs" />
-    <Compile Include="City.cs" />
-    <Compile Include="LListCity.cs" />
-    <Compile Include="LListRoad.cs" />
-    <Compile Include="LListRoute.cs" />
+    <Compile Include="Other\InOut.cs" />
+    <Compile Include="City\City.cs" />
+    <Compile Include="City\LListCity.cs" />
+    <Compile Include="Road\LListRoad.cs" />
+    <Compile Include="Route\LListRoute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Road.cs" />
-    <Compile Include="Route.cs" />
-    <Compile Include="TaskUtils.cs" />
+    <Compile Include="Road\Road.cs" />
+    <Compile Include="Route\Route.cs" />
+    <Compile Include="Other\TaskUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

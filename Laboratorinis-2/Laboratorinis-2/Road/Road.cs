@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Laboratorinis_2
+﻿namespace Laboratorinis_2
 {
     public class Road
     {
@@ -38,7 +33,7 @@ namespace Laboratorinis_2
 
         public override string ToString()
         {
-            return string.Format("{0} - {1}: {2} km", Start, Destination, Distance);
+            return string.Format("{0, -20} | {1, -20} | {2, 20} km", Start, Destination, Distance);
         }
     }
 }

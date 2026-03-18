@@ -1,0 +1,18 @@
+Vilnius, Kaunas, 102
+Kaunas, Klaipėda, 212
+Vilnius, Šiauliai, 214
+Kaunas, Šiauliai, 145
+Šiauliai, Klaipėda, 134
+Kaunas, Panevėžys, 130
+Panevėžys, Šiauliai, 103
+Kaunas, Alytus, 104
+Kaunas, Marijampolė, 80
+Alytus, Marijampolė, 60
+================================================================
+Vilnius, 580000
+Kaunas, 290000
+Klaipėda, 145000
+Šiauliai, 95000
+Panevėžys, 85000
+Alytus, 50000
+Marijampolė, 35000
